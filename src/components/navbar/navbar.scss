@@ -9,5 +9,7 @@
 
   div:hover {
     background-color: pink;
+    width: calc(100% - 1rem);
+    text-align: center;
   }
 }
