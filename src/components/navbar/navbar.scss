@@ -1,0 +1,15 @@
+.nav__container {
+  margin-top: 20px;
+  text-align: center;
+  display: grid;
+  grid-gap: 3px 1px;
+  grid-template-columns: repeat(3, 1fr 3fr 1fr);
+  grid-template-rows: 1;
+  background-color: white;
+
+  div:hover {
+    background-color: pink;
+    width: calc(100% - 1rem);
+    text-align: center;
+  }
+}

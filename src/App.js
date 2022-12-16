@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.scss';
+import Navbar from './components/navbar/Navbar'
 
 function App() {
   return (
     <>
+      <Navbar />
       {/* Variable Example */}
       <h1>This is a variable example</h1>
 
