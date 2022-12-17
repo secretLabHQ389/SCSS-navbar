@@ -24,7 +24,7 @@ function App() {
 
       { /* Mixin Example */}
       <div id="mixin">
-        <p>This is a mixin Example</p>
+        <p>This is a <span>mixin</span> Example</p>
       </div>
     </>
   );
