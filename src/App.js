@@ -1,33 +1,25 @@
-import React from 'react';
-import './App.scss';
+import React, { useState } from 'react'
+import './App.scss'
 import Navbar from './components/navbar/Navbar'
+import Footer from './components/footer/Footer'
 
 function App() {
+  const [showGreeting, setShowGreeting ] = useState(false)
+
+  const showAlertGreetingHandler = () => {
+    setShowGreeting(showGreeting => !showGreeting)
+  }
+
   return (
     <>
       <Navbar />
-      {/* Variable Example */}
-      <h1>This is a variable example</h1>
-
-      {/* Nested Rules */}
-      <div id="nested">
-        <h3>This is a nested rules example</h3>
-      </div>
-
-      {/* Interpolation Example */}
-      <p className="interpolation">Interpolation Example.</p>
-
-      {/* Function Example */}
-      <div id="function">
-        <h3>This is a function example</h3>
-      </div>
-
-      { /* Mixin Example */}
-      <div id="mixin">
-        <p>This is a <span>mixin</span> Example</p>
-      </div>
+      <button type="submit" onClick={() => showAlertGreetingHandler()}>Greetings Visitor</button>
+      {showGreeting && (
+        <div>Hello my friend</div>
+      )}
+      <Footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,8 +1,8 @@
-import React from "react";
-import "./button.scss";
+import React from "react"
+import "./button.scss"
 
 function Button(props) {
-  return <button onClick={props.onClick}>{props.children}</button>;
+  return <button type="submit" onClick={props.onClick}>{props.children}</button>
 }
 
-export default Button;
+export default Button
