@@ -20,6 +20,8 @@ const CssExs = () => {
       </div>
 
       <img className={'masked'} src={NicePecs} alt='ghost porn' />
+
+      <div className={'manual-center'} />
     </>
   )
 }
