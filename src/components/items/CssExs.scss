@@ -34,3 +34,11 @@
 .manual-center:hover {
   transform: scale(1.9);
 }
+
+.align-vertically {
+  background-color: green;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}

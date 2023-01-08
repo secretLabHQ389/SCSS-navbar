@@ -22,6 +22,8 @@ const CssExs = () => {
       <img className={'masked'} src={NicePecs} alt='ghost porn' />
 
       <div className={'manual-center'} />
+
+      <div className={'align-vertically'}>Vertically align flexbox.</div>
     </>
   )
 }
