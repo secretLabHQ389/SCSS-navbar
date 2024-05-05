@@ -1,17 +1,17 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.alert ul, .alert p, .warning ul, .warning p {
+    border: 1px solid white;
 }
 
-body {
-    background-color: #fff;
-    color: #2b2b2b;
-    font-family: "Times New Roman", Times, serif;
-    height: 100vh;
+h2 + p {
+  border-top: 1px solid gray;
 }
 
-a {
-    text-decoration: none;
-    color: unset;
+p > span {
+  background-color: green;
+  filter: blur();
 }
+
+p ~ span {
+  opacity: 0.8;
+}
+w
